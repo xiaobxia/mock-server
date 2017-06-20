@@ -6,8 +6,6 @@ module.exports = {
         let totalPage = Math.ceil(total / size)
         let resNum = page >= totalPage ? (total - (page - 1) * size) : size
         return {
-            'resNum': resNum,
-            'startIndex': (page - 1) * size,
             data: {
                 'result': result,
                 'success': true,

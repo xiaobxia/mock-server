@@ -7,12 +7,14 @@ module.exports = {
             page = parseInt(query.page)|| 1,
             size = parseInt(query.size)|| 10,
             totalPage = Math.ceil(total / size),
-            resNum = page >= totalPage ? (total - (page - 1) * size) : size;
+            startIndex = (page - 1) * size,
+            resNum = page >= totalPage ? (total - startIndex) : size;
         return {
             page: page,
             size: size,
             totalPage: totalPage,
-            resNum: resNum
+            resNum: resNum,
+            startIndex: startIndex
         }
     }
 }
