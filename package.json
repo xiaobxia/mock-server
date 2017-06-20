@@ -1,0 +1,23 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "mock server for company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node idnex.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaobxia/mock-server.git"
+  },
+  "author": "xiaobxia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaobxia/mock-server/issues"
+  },
+  "homepage": "https://github.com/xiaobxia/mock-server#readme",
+  "dependencies": {
+    "fs-extra": "^3.0.1"
+  }
+}

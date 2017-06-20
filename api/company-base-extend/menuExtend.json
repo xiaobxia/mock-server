@@ -1,0 +1,13 @@
+{
+  "id": 0,
+  "name": "业务",
+  "icon": "fa-table",
+  "children": [
+    {
+      "id": 1,
+      "name": "子业务",
+      "path": "/job/index",
+      "url": "job/index"
+    }
+  ]
+}
