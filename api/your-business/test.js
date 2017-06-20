@@ -9,7 +9,7 @@ module.exports = {
     response: function (req, res) {
         let total = 100;
         let paging = requst.pageParse(req, total)
-        let data = response.pagecreate(total,paging.page,paging.size, dataG.img({
+        let data = response.pageCreate(total,paging.page,paging.size, dataG.img({
             type: 'list',
             min: 1,
             max: 5
