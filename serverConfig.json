@@ -1,5 +1,5 @@
 {
-  "withSupermanConsole": false,
+  "withSupermanConsole": true,
   "businessName": "your-business",
-  "port": 4000
+  "port": 5000
 }
