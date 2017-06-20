@@ -4,14 +4,15 @@
 const fs = require('fs-extra')
 
 module.exports = function (options) {
-    let files = fs.readdirSync('./static/img'),
+    let dir = options.dir,
+        files = fs.readdirSync(`./static/${dir}`),
         len = files.length,
         type = options.type || 'single',
         min = options.min || 1,
         max = options.max || 10,
-        basePath = '/img/';
+        basePath = `/${dir}/`;
     if (len === 0) {
-        console.log('static/img下无图片');
+        console.log(`static/${dir}下无图片`);
         return '';
     }
     if (type === 'single') {

@@ -10,10 +10,11 @@ module.exports = {
         let total = 100;
         let paging = requst.pageParse(req, total)
         let data = response.pageCreate(total,paging.page,paging.size, dataG.img({
+            dir: 'img',
             type: 'list',
             min: 1,
             max: 5
         }));
         res.json(data)
     }
-}
+};
