@@ -19,7 +19,7 @@ if (withSupermanConsole === true) {
     fs.readdirSync(baseDir).forEach(function (file) {
         let mock = require(path.resolve(baseDir, file))
         let api = `/${businessName}/${mock.api}`;
-        app.use(api, mock.response);
+        app.get(api, mock.response);
     });
     //扩展
     let extendDir = path.resolve(__dirname, './api/company-base-extend');
@@ -29,7 +29,7 @@ if (withSupermanConsole === true) {
         }
         let mock = require(path.resolve(extendDir, file))
         let api = `/${businessName}/${mock.api}`;
-        app.use(api, mock.response);
+        app.get(api, mock.response);
     });
 }
 
@@ -38,7 +38,7 @@ let businessDir = path.resolve(__dirname, `./api/${businessName}`);
 fs.readdirSync(businessDir).forEach(function (file) {
     let mock = require(path.resolve(businessDir, file))
     let api = `/${businessName}/${mock.api}`;
-    app.use(api, mock.response);
+    app.get(api, mock.response);
 });
 
 //静态资源
