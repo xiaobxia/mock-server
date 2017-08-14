@@ -7,7 +7,7 @@ const fs = require('fs-extra')
 const app = express();
 
 //得到服务器配置
-const config = JSON.parse(fs.readFileSync('./serverConfig.json'));
+const config = require('./config/index');
 const withSupermanConsole = config.withSupermanConsole;
 const port = config.port;
 const businessName = config.businessName;
