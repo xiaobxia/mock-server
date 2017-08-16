@@ -27,7 +27,7 @@ module.exports = class BaseApi {
       defaultPageSize = 0;
     if (defaultValue) {
       defaultPageIndex = defaultValue.pageIndex ? defaultValue.pageIndex : 1;
-      defaultPageSize = defaultValue.pageSize ? defaultValue.pageSize : 20;
+      defaultPageSize = defaultValue.pageSize ? defaultValue.pageSize : 10;
     }
     //得是个整数
     let pageIndexT = parseInt(pageIndex, 10),
